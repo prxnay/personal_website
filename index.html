@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay: Personal Website</title>
+<!-- Adding bootstrap to our website -->
+                    <!-- Latest compiled and minified CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+                <!-- jQuery library -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+                <!-- Popper JS -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+                <!-- Latest compiled JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                
+    <!-- LINKING STYLESHEET -->
+        <link href="index.css" rel="stylesheet" type="text/css">
+
+    <!-- ADDING ANIMATE.CSS -->
+    <linK rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- for breadcrumb -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- CODE FROM "https://getbootstrap.com/docs/4.0/components/navbar/" FOR NAVBAR
+    
+    divided navbar into section for styling -->
+            <div class="container">
+                <!-- adding container increases width of sides of page -->
+                <div class="nav_section">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class= "navbar-brand text-white" href="#">
+                            Pranay Bajracharya</a>
+                        <button class="navbar-toggler" style="border: none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="text-white fa fa-bars"></i>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: #f87652 !important"href="#intro-section">Home</a>
+                            </li>                  
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about_me">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills_section">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact_section">Contact</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#contact_section">Personal Projects</a>
+                            </li> -->
+                           
+                            </ul>
+                           
+                        </div>
+                        </nav>
+                </div>
+            </div>
+    
+    <!-- Home content -->
+        <div class="intro-section">
+            <div class= "container">
+                <div class="row">
+                    <!-- formatting text for different screen sizes -->
+                    <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+                        <h3> Hello!</h3>
+                        <h1>I'm Pranay</h1>
+                        <h2> Computer Science Student</h2>
+                        <hr>
+                        <p id="txt">Welcome to my personal website. I am currently a second year student at the University 
+                            of Guelph majoring in Computer Science.</p> 
+                        <div class="btn_container">
+                            
+                            <button class= "btn btn-light">Let's Connect</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+                        <center> 
+                            <img src="images/pranay.jpg">
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- About Me section -->
+       
+            <div class="about_me" div id="about_me">
+                <div class ="container">
+                    <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 m-0">             
+                        <h2 id="heading">About Me</h2>
+                        <hr>
+                        <p id="txt">Hello, My name is Pranay Bajracharya. I am currently a second year Computer Science student at the University of Guelph.
+                            I am in the co-op program and looking for internship opportunities to gain real world experience in the tech world.
+                        </p>
+                        <button class="btn btn-light btn-sm animate_animated">Resume</button>
+                        
+                    </div>
+                </div>
+            </div>
+        
+
+<!-- Skills section -->
+        <div class="skills_section" div id="skills_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 m-0">
+                        <div>
+                            <h1 class="text-white" id="heading">My Skills</h1>
+                            <hr>
+                            <ul id="txt">
+                                <ul>Languages</ul>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>Git(Github/Gitlab)</li>
+                                </ul>
+                                <ul>Frameworks/libraries
+                                <li>Node.js </li>
+                                <li>Bootstrap</li>
+                                </ul>
+
+                            </ul>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Contact section -->
+<div class="contact_section" div id="contact_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12 m-0">
+                <div>
+                    <h1 class="text-white" id="heading">Let's talk :)</h1>
+                    <hr>
+                    <!-- add github and linkedin links + email info -->
+                    <p><h3>I would love to connect with you </h3></p>
+                    
+                    <p>Email: prxnay@gmail.com</p>
+                    <p>Phone: 647-739-3464</p>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</body>
+</html>
