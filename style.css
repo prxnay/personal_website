@@ -1,0 +1,213 @@
+/* Importing fonts from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --background-color: #333647
+}
+*{
+    /* also got from fonts.goole.com same page */
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: var(--background-color)!important;
+}
+
+/* Navbar */
+    .nav_section .navbar-brand{
+        font-size: 25px;    
+    }
+    .nav_section .navbar-nav li{
+        margin: 0px 40px
+    }
+    /* for the navbar sections "contact etc */
+    .nav_section .navbar-nav li a{
+        color:white !important;
+        font-size: 15px;
+    }
+
+    /* hover for navbar */
+        .nav_section .navbar-nav .nav-link::before{
+            content: "";
+            width: 0px;
+            height: 0px;
+            background-color: white;
+            position:absolute;
+            bottom: 7px;
+            transition: 0.5s;
+        }
+        .nav_section .navbar-nav .nav-link:hover::before{
+            height: 2px;
+            content: "";
+            width: 17px;
+            background-color: white;
+            position: absolute;
+            bottom: 7px;
+        }
+    /* Text formatting for home making it all central aligned */
+    .intro-section .row{
+         display: flex;
+         align-items: center;
+         height:100vh;
+    }
+    .intro-section .row h1,h2,h3,p{
+        color: white;
+    }
+    .intro-section .row h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .intro-section .row h2{
+        font-size: 20px;
+        font-weight: 100;
+        margin: 8px 0px
+    }
+    .intro-section .row p{
+        font-size: 13px;
+        margin-top: 13px;
+        line-height: 21px;
+        color:#bbbbbb;
+    }
+
+
+    .intro-section hr{
+        margin:0px;
+        border: 0.5px solid orange;
+        width: 6rem;
+        /* color: orange; */
+    }
+
+
+    /* Image formatting */
+    .intro-section .row img{
+        width: 80%;
+        margin-top:4%;
+    }
+ 
+
+/* Making website responsive for desktop */
+    @media only screen and (min-width: 1200px){
+        .intro-section.row h1 {
+            font-size: 78px;
+        }
+        .intro-section{
+            margin: 0px 0px;
+        }
+    }
+
+    @media (max-width:1200px)and(min-width:993px){
+        .intro-section.row h1 {
+            font-size: 58px;
+        }
+    }
+
+    @media (max-width:993px)and(min-width:763px){
+        .intro-section.row h1 {
+            font-size: 42px;
+        }
+        .intro-section.row h2 {
+            font-size: 15px;
+        }
+        .intro-section.row h3 {
+            font-size: 15px;
+        }
+        .intro-section.row p {
+            font-size: 11px;
+        }
+        .intro-section.row button {
+            font-size: 15px;
+            
+        }
+    }
+    
+    /* Making website responsive for mobile view */
+    @media (max-width:763px)and(min-width:500px){
+        .intro-section{
+            margin: 135px 0px;
+        }
+        .intro-section.row h1 {
+            font-size: 42px;
+        }
+        .intro-section.row h2 {
+            font-size: 15px;
+        }
+        .intro-section.row h3 {
+            font-size: 15px;
+        }
+        .intro-section.row p {
+            font-size: 11px;
+            text-align: center;
+        }
+        .intro-section .btn_container {
+            justify-content: center;
+            text-align: center;
+        }
+        .intro-section .btn_container button{
+            width: 100px;
+            height: 43px;
+            font-size: 15px;
+            text-align: center;
+        }
+    
+    }
+
+/* About me Section */
+    .about_me{
+        padding:170px 0px;
+    }
+    .about_me hr{
+        margin:0px;
+        border: 0.5px solid orange;
+        width: 6rem;
+    }
+    .about_me p{
+        padding-top:12px;
+    }
+    .about_me button{
+        border-radius: 8px;
+        font-size: 15px;
+        background-color:#f87652;
+        color: whitesmoke;
+        font-family:'Poppins', sans-serif; 
+        margin-top: 10px;
+    }
+    .about_me button:hover{
+        animation: swing;
+        background-color:#f87652;
+        color: whitesmoke;
+        animation-duration: 0.5s;
+    }
+
+    /* making about us responsive */
+    /* @media(max-width:933px) and (min-width: 768px) {
+        
+    } */
+
+    /* SKILLS SECTION */
+    .skills_section{
+        padding:170px 0px;
+    }
+    .skills_section ul{
+        padding-top: 13px;
+        border: none;
+        color: whitesmoke;
+        text-align: left;
+    }
+    .skills_section hr{
+        margin:0px;
+        border: 0.5px solid orange;
+        width: 6rem;
+    }
+
+    /* Contact Section */
+    .contact_section hr{
+        margin:0px;
+        border: 0.5px solid orange;
+        width: 6rem;
+    }
+
+
+    /* Sticky navbar trial */
+    
